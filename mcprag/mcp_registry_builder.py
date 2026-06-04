@@ -7,13 +7,13 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 import asyncio
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
-CONFIG_PATH = "/home/aru_khuntia/mcpclient/config.json" 
-PROJECT_ID = "project-339ed267-1361-44c4-a89"   # <-- change this
-REGION = "us-central1"          # or your preferred region
+CONFIG_PATH = os.getenv("MCP_CONFIG_PATH", "config.json")
 os.environ["PYTHONHTTPSVERIFY"] = "0"
-os.environ["GOOGLE_CLOUD_PROJECT"] = PROJECT_ID
-os.environ["GOOGLE_CLOUD_LOCATION"] = REGION
+os.environ["GOOGLE_CLOUD_PROJECT"] = os.getenv("google_project_id")
+os.environ["GOOGLE_CLOUD_LOCATION"] = os.getenv("google_region")
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "True"   # 🔥 CRITICAL
 
 # ✅ Extract tools dynamically from MCP
