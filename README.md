@@ -63,7 +63,7 @@ MCPAgent Execution
 ---
 
 ## 🔧 Example
-
+### WITH MCP ROUTER
 ### Input
 
 \`\`\`python
@@ -77,24 +77,25 @@ query = "open google.com"
 \`\`\`
 
 ### Output
-
+![Project Screenshot](singlemcp.jpg)
 \`\`\`
-📊 INPUT TOKENS: 2100
-📊 OUTPUT TOKENS: 120
-📊 TOTAL TOKENS: 2220
+📊 INPUT TOKENS: 5
+📊 TOOL TOKENS: 3947
+📊 TOTAL TOKENS: 3952
 \`\`\`
 
 ✅ Only browser tools are loaded  
 ❌ Other MCPs are excluded  
 
 ---
-
+### WITHOUT MCP ROUTER
+![Project Screenshot](allMCP.png)
 ## 📊 Token Efficiency (Example)
 
 | Setup | Tools Loaded | Tokens |
 |------|-------------|--------|
 | All MCPs | ~80+ tools | ❌ High |
-| RAG-selected MCPs | ~20 tools | ✅ Reduced |
+| RAG-selected MCPs | ~23 tools | ✅ Reduced |
 
 ✅ Up to ~50-80% reduction in token usage  
 
