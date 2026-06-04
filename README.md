@@ -96,7 +96,7 @@ query = "open google.com"
 | All MCPs | ~80+ tools | ❌ High |
 | RAG-selected MCPs | ~20 tools | ✅ Reduced |
 
-✅ Up to ~50% reduction in token usage  
+✅ Up to ~50-80% reduction in token usage  
 
 ---
 
@@ -116,7 +116,7 @@ query = "open google.com"
 ## ⚙️ Installation
 
 \`\`\`bash
-git clone https://github.com/your-username/mcp-rag-router.git
+git clone https://github.com/akkcet/MCP.git
 cd mcp-rag-router
 pip install -r requirements.txt
 \`\`\`
