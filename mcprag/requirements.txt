@@ -1,0 +1,19 @@
+# Core MCP client
+mcp-use
+
+# LangChain ecosystem
+langchain
+langchain-community
+langchain-core
+
+# Google Gemini / Vertex AI
+langchain-google-genai
+
+# Vector store
+faiss-cpu
+
+# Token counting
+tiktoken
+
+# Utilities
+numpy
