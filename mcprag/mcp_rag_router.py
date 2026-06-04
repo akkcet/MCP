@@ -4,8 +4,6 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-PROJECT_ID = "project-339ed267-1361-44c4-a89"   # <-- change this
-REGION = "us-central1"          # or your preferred region
 os.environ["PYTHONHTTPSVERIFY"] = "0"
 os.environ["GOOGLE_CLOUD_PROJECT"] = os.getenv("google_project_id")
 os.environ["GOOGLE_CLOUD_LOCATION"] = os.getenv("google_region")
