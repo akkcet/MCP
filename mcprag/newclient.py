@@ -13,7 +13,7 @@ os.environ["GOOGLE_CLOUD_PROJECT"] = os.getenv("google_project_id")
 os.environ["GOOGLE_CLOUD_LOCATION"] = os.getenv("google_region")
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "True"   # 🔥 CRITICAL
 
-config_file = "/home/aru_khuntia/mcpclient/config.json"
+config_file = os.getenv("MCP_CONFIG_PATH", "config.json")
 
 
 def build_filtered_config(selected_mcps):
