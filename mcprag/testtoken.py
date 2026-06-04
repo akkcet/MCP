@@ -19,7 +19,7 @@ except:
 # ========================
 # ✅ ENV SETUP
 # ========================
-
+CONFIG_PATH = os.getenv("MCP_CONFIG_PATH", "config.json")
 os.environ["PYTHONHTTPSVERIFY"] = "0"
 os.environ["GOOGLE_CLOUD_PROJECT"] = os.getenv("google_project_id")
 os.environ["GOOGLE_CLOUD_LOCATION"] = os.getenv("google_region")
@@ -44,7 +44,7 @@ BASE_CONFIG = {
 }
 """
 
-with open("/home/aru_khuntia/mcpclient/config.json", "r") as f:
+with open(CONFIG_PATH, "r") as f:
     BASE_CONFIG = json.load(f)
 
 # ========================
